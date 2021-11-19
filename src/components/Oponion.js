@@ -1,9 +1,9 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import Rating from "react-rating";
 
 const Oponion = (props) => {
-  const { name, address, description, rating } = props.oponion;
+  const { name, address, description, rating, more } = props.oponion;
   return (
     <Card style={{ minHeight: "150px" }} className="my-5">
 
@@ -25,7 +25,9 @@ const Oponion = (props) => {
           {rating}
         </h6>
         <br />
+        <hr />
         <Card.Text>{description?.slice(0, 10)}</Card.Text>
+        <Button>{more}</Button>
       </Card.Body>
     </Card>
   );

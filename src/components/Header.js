@@ -10,7 +10,9 @@ const Header = () => {
     <Navbar className="navBar" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          {/* <img width="150px" src={logo} alt="" /> */}
+          {/* logo is here */}
+
+          <img width="100px" src={"https://www.carlogos.org/car-logos/honda-logo.png"} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

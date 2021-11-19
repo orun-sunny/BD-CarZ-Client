@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
+
+      {/* all footer added */}
       <div className="footerSection">
         <Container>
           <Row>
@@ -36,7 +38,7 @@ const Footer = () => {
             </Col>
             <Col md={4} xs={12} xl={4}>
               <div className="footerAbout">
-                <h3>Car Portal</h3>
+                <h3>BD CarZ</h3>
                 <p>"Being here is a kind of spiritual surrender   </p>
               </div>
             </Col>

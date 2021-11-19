@@ -37,7 +37,7 @@ const Home = () => {
                 </Bounce>
                 <p></p>
                 <Bounce>
-                  <button className="main-button">Get your Car</button>
+                  <button className="main-button">BD CarZ here for You</button>
                 </Bounce>
               </div>
               <Bounce right>
@@ -57,8 +57,9 @@ const Home = () => {
 
             <Carousel.Caption>
               <div className="mb-5 p-8 align-item-center">
-
-                <h1>Enjoy this Ride</h1>
+                <Bounce>
+                  <h1>Enjoy this Ride with BDCarZ </h1>
+                </Bounce>
                 <p></p>
                 <button className="main-button">Get your Car</button>
               </div>
@@ -81,7 +82,7 @@ const Home = () => {
                 <button className="main-button">Get your Car</button>
               </div>
               <h3>Travel to the any corner of the world, with you fav vichle </h3>
-              {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
+
             </Carousel.Caption>
           </Carousel.Item>
 
@@ -99,7 +100,7 @@ const Home = () => {
               <div class="col-md-12">
                 <div class="wrap-appointment d-md-flex">
                   <div class="col-md-8 bg-dark p-5 heading-section heading-section-white">
-                    {/* <span class="subheading bg-white">Booking an Appointment</span> */}
+
                     <h2 class="mb-4 bg-white ">Free Consultation</h2>
                     <form action="#" class="appointment">
                       <div class="row justify-content-center d-flex">

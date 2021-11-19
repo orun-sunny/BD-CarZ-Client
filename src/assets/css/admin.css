@@ -27,7 +27,7 @@
   font-size: 18px;
   transition: 0.5s;
 }
-.admin-side-bar ul li a:hover {
+/* .admin-side-bar ul li a:hover {
   color: #000;
 }
 .admin-side-bar ul li a i {
@@ -35,7 +35,9 @@
 }
 .admin-container {
   margin-top: 20px;
-}
+} */
+
+
 .dashboard {
   overflow-x: hidden;
 }

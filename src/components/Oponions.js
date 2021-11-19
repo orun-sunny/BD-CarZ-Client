@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Card, Spinner } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, Pagination } from "swiper";
+
 import Fade from "react-reveal/Fade";
 import Oponion from "./Oponion.js";
 import toast from "react-hot-toast";
 import "./../assets/css/Oponions.css";
+import SwiperCore, { Autoplay, Pagination } from "swiper";
 
 const Oponions = () => {
   SwiperCore.use([Pagination, Autoplay]);
@@ -25,8 +26,10 @@ const Oponions = () => {
     <section
       id="reviews"
       style={{ overflow: "hidden" }}
-      className="oponions p-md-3"
+      className="oponions p-md-3 col-xs-12"
     >
+
+      {/* swipper added */}
       <Fade bottom duration={500} distance="50px">
         <div className="my-5 py-4">
           <div className="review-title text-center">
@@ -57,11 +60,11 @@ const Oponions = () => {
                   },
                 }}
                 autoplay={{
-                  delay: 1500,
+                  delay: 1000,
                   disableOnInteraction: false,
                 }}
 
-              //Reviews map here
+              //Reviews all details are here
               >
                 {Reviews.map((oponion) => {
                   return (

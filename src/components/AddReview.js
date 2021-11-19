@@ -42,6 +42,8 @@ const AddReview = () => {
     reset();
   };
   return (
+
+    // section added here
     <section>
       <h3 className="text-center text-capitalize fw-bold">Give a feedback</h3>
       <Form onSubmit={handleSubmit(onSubmit)} className="w-100 form-main">

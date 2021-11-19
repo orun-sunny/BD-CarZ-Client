@@ -1,10 +1,11 @@
 import axios from "axios";
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+
 import { useForm } from "react-hook-form";
 import swal from "sweetalert2";
 import Bounce from 'react-reveal/Bounce';
 import SectionBg from "./../assets/images/sectionBg.png";
+import { Button, Form } from "react-bootstrap";
 
 const MakeAdmin = () => {
   const { register, handleSubmit, reset } = useForm();

@@ -88,8 +88,9 @@ const Orders = () => {
               <th>Phone</th>
               <th>Address</th>
               <th>Product</th>
-              <th>Deletion</th>
               <th>Status</th>
+              <th>Deletion</th>
+
             </tr>
           </thead>
           {orders.map((order) => {

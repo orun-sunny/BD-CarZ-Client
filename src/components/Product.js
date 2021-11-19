@@ -12,14 +12,14 @@ const Product = ({ product }) => {
         <Card style={{ height: "400px" }} className="mx-1  shadow">
           <div className="text-center">
             <Card.Img
-              style={{ width: "100%", height: "150px" }}
+              style={{ width: "100%", height: "100px" }}
               variant="top"
               src={img}
             />
           </div>
           <Card.Body>
             <Card.Title className="text-uppercase">{title}</Card.Title>
-            <Card.Title>Price: {price}.00TK</Card.Title>
+            <Card.Title>Price: {price}TK</Card.Title>
             <Card.Text>{desc}</Card.Text>
             <Card.Text>
               Rating:{" "}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button, Table } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
+
 
 const ManageProducts = () => {
   const [products, setProducts] = useState([]);

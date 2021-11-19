@@ -53,7 +53,7 @@ const useFirebase = () => {
       .catch((error) => { });
   }
 
-  // Get the currently signed-in user
+  //  signed-in user
 
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
