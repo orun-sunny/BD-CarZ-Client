@@ -9,8 +9,9 @@ const Oponion = (props) => {
 
       <Card.Body className="text-center">
         <h5>
-          {name} <hr />
-          <span>{address}</span>
+          {name}
+          <hr />
+          <h5>{address}</h5>
           <hr />
         </h5>
         <h6>

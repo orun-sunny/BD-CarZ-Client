@@ -2,7 +2,7 @@ import React from "react";
 import "./../assets/css/login.css";
 import { useForm } from "react-hook-form";
 import { Link, useHistory, useLocation } from "react-router-dom";
-// import avatar from "./../assets/images/avater.png";
+
 import useContexts from "../hooks/useContexts.js";
 import { Spinner } from "react-bootstrap";
 const Login = () => {
@@ -54,7 +54,7 @@ const Login = () => {
               </button>
             </form>
             <h6 className="text-center text-white">
-              New user? <Link to="/register"> Please register!</Link>
+              <Link to="/register"> Please register!</Link>
             </h6>
           </div>
         </div>

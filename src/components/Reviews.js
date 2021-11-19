@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import React from "react";
 import { Button, Card } from "react-bootstrap";
@@ -34,7 +33,7 @@ const Review = ({
             swal(
               "oops!",
               "error",
-              { dangerMode: true }
+
             );
           })
           .catch((err) => {

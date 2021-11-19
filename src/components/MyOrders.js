@@ -50,7 +50,7 @@ const Orders = () => {
       {loading ? (
         <div className="text-center my-5 private-spinner py-5">
 
-          <h6>Loading...</h6>
+          <h6>wait here...</h6>
         </div>
       ) : (
         <Table hover borderless responsive>

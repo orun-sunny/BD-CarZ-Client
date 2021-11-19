@@ -72,17 +72,10 @@ const ManageProducts = () => {
                 <td>${product.price}</td>
                 <td className="text-center">
                   <Link to={`addProduct/${product._id}`}>
-                    <Button
-                      variant=""
-                      className="p-1 me-2 mb-0"
-                      onClick={() => { }}
-                    >
-                      <i className="fas   mx-1"></i>
-                      Edit
-                    </Button>
+
                   </Link>
                   <Button
-                    variant="outline-primary"
+                    variant="outline-danger"
                     className="p-1 ml-3 mb-0"
                     onClick={() => {
                       deleteProduct(product._id);

@@ -38,7 +38,7 @@ const Orders = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          toast.success(<b style={{}}>Set to {status}</b>);
+          toast.success(<b style={{}}> { }</b>);
         }
       })
       .catch((error) => toast.error(error.message));
