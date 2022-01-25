@@ -13,7 +13,7 @@ const PlaceOrder = () => {
   const [product, setProduct] = useState({});
   const { displayName, email } = useContexts();
   useEffect(() => {
-    fetch(`https://arcane-cove-15684.herokuapp.com/placeorder/${id}`)
+    fetch(`https://stormy-hamlet-70465.herokuapp.com/placeorder/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
@@ -27,7 +27,7 @@ const PlaceOrder = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch("https://arcane-cove-15684.herokuapp.com/placeorder", {
+        fetch("https://stormy-hamlet-70465.herokuapp.com/placeorder", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({ ...data, ...product }),

@@ -22,7 +22,7 @@ const Review = ({
       if (wantDelete) {
         const loading = toast.loading("Deleting...Please wait!");
         axios
-          .delete(`https://arcane-cove-15684.herokuapp.com/deleteReview/${id}`)
+          .delete(`https://stormy-hamlet-70465.herokuapp.com/deleteReview/${id}`)
           .then((res) => {
             toast.dismiss(loading);
             if (res.data) {

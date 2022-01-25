@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const ManageProducts = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://arcane-cove-15684.herokuapp.com/products")
+    fetch("https://stormy-hamlet-70465.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -28,7 +28,7 @@ const ManageProducts = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://arcane-cove-15684.herokuapp.com/deleteProduct/${id}`, {
+        fetch(`https://stormy-hamlet-70465.herokuapp.com/deleteProduct/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

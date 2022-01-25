@@ -9,7 +9,7 @@ function AdminRoute(props) {
   const [user, setUser] = useState({});
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch(`https://arcane-cove-15684.herokuapp.com/admin/${email}`)
+    fetch(`https://stormy-hamlet-70465.herokuapp.com/admin/${email}`)
       .then((res) => res.json())
       .then((data) => {
         setUser(data);

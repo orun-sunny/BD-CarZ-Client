@@ -13,7 +13,7 @@ const Oponions = () => {
   const [loading, setLoading] = useState(true);
   const [Reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("https://arcane-cove-15684.herokuapp.com/reviews")
+    fetch("https://stormy-hamlet-70465.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);

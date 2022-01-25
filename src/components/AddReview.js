@@ -23,7 +23,7 @@ const AddReview = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch("https://arcane-cove-15684.herokuapp.com/addReview", {
+        fetch("https://stormy-hamlet-70465.herokuapp.com/addReview", {
           method: "post",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

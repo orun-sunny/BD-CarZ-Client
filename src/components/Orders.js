@@ -10,7 +10,7 @@ const Orders = () => {
   console.log(orders);
 
   useEffect(() => {
-    fetch(`https://arcane-cove-15684.herokuapp.com/orders`)
+    fetch(`https://stormy-hamlet-70465.herokuapp.com/orders`)
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);
@@ -30,7 +30,7 @@ const Orders = () => {
     setOrders(modifiedOrders);
     const modifiedStatus = { id, status };
 
-    fetch("https://arcane-cove-15684.herokuapp.com/updateOrderStatus", {
+    fetch("https://stormy-hamlet-70465.herokuapp.com/updateOrderStatus", {
       method: "put",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(modifiedStatus),
@@ -51,7 +51,7 @@ const Orders = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://arcane-cove-15684.herokuapp.com/placeorder/${id}`, {
+        fetch(`https://stormy-hamlet-70465.herokuapp.com/placeorder/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
