@@ -89,7 +89,7 @@ const Dashboard = () => {
                 )}
                 {user?.role === "admin" && (
                   <li className="sideBarLink">
-                    <NavLink to={`${url}/makeAdmin`}>
+                    <NavLink to={`${url}/makeAdmin`}> 
                       Make admin
                       <hr />
                     </NavLink>
